@@ -5,7 +5,7 @@ node_js:
   - 13
 
 script:
-  - cd books
+  - cd texts
   - npm install
   - npm run build
   - npm run webpack:production
