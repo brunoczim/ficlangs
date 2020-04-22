@@ -11,8 +11,7 @@ script:
   - npm install
   - npm run build
   - npm run webpack:production
-  - mdkir ../docs/
-  - cp -r dist/ ../docs/
+  - cp -r dist/ ../docs
 
 cache: npm
 
