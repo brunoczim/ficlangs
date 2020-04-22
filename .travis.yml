@@ -10,6 +10,7 @@ script:
   - npm run build
   - npm run webpack:production
   - cp -r dist/ ../docs
+  - cd ..
 
 cache: npm
 
