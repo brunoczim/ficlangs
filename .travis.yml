@@ -1,0 +1,25 @@
+language: nodejs
+os:
+  - linux
+
+node_js:
+  - 13
+
+script:
+  - cd books
+  - npm install
+  - npm run build
+  - npm run webpack:production
+  - mdkir ../docs/
+  - cp -r dist/ ../docs/
+
+cache: npm
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: docs
+  skip_cleanup: true
+  on:
+    branch: master
