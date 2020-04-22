@@ -10,16 +10,18 @@ body, html {
 
 body {
     font-family: "Cantarell", sans-serif;
+    font-size: 12pt;
     text-align: center;
 }
 
 a {
-    color: #3394A4;
+    color: #00879C;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    color: #3399BB;
+    color: #0097A8;
     text-decoration: underline;
 }
 
