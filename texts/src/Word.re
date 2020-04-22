@@ -65,7 +65,18 @@ module InText = {
                     "word word-no-boxed";
                   }
                 }>
-      <div onClick={_ => dispatch(OpenBox)} className="intext-word">
+      <div
+        onClick={
+          _ =>
+            dispatch(
+              if (state.showBox) {
+                CloseBox;
+              } else {
+                OpenBox;
+              },
+            )
+        }
+        className="intext-word">
         {
           if (Settings.showOrthography(settings)) {
             <Orthography.InText
