@@ -1,7 +1,7 @@
-[%bs.raw {|require("./index.css")|}];
+[%bs.raw {|require("./text.css")|}];
 
 let text = [
-  Text.Title([
+  Element.Title([
     Word.make(
       ~orthography={j|teksi|j},
       ~romanization={j|teksi|j},

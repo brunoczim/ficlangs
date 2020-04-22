@@ -1,0 +1,5 @@
+@import "./common.css";
+
+ol.list-of-texts > li {
+    margin: 20pt;
+}

@@ -62,7 +62,7 @@ let make = (~text) => {
   let mapped =
     List.mapi(
       (index, elem) =>
-        <Text
+        <Element
           key={string_of_int(index)}
           contents=elem
           settings={state.settings}
@@ -71,6 +71,7 @@ let make = (~text) => {
     );
 
   <div className="screen-wrapper">
+    <a href="../index.html"> {React.string("Go to Index of Texts")} </a>
     <div className="buttons-wrapper">
       <ToggleButton
         key="orthography"

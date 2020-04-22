@@ -1,15 +1,12 @@
+@import "./common.css";
+
 @font-face {
     font-family: "Stab Folk Alphabet";
     src: url("../../Star Folk Alphabet.ttf");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Cantarell", sans-serif;
+.buttons-wrapper {
+    margin-top: 10pt;
 }
 
 .title, .paragraph {
@@ -28,7 +25,7 @@ body {
     margin: 4pt;
 }
 
-.button:hover,  .active-button:hover, .inactive-button:hover {
+.button:hover, .active-button:hover, .inactive-button:hover {
     cursor: pointer;
 }
 
@@ -77,4 +74,8 @@ body {
     border-top-width: 2pt;
     border-top-color: #AA55AA;
     padding: 4pt;
+}
+
+.text-wrapper {
+    text-align: justify;
 }

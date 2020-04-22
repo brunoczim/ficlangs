@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Cantarell", sans-serif;
+    text-align: center;
+}
+
+a {
+    color: #3394A4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3399BB;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #338899;
+    text-decoration: underline;
+}
+
+#root {
+    padding: 30pt;
+    margin: 0 auto 0 auto;
+}

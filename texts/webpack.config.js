@@ -6,7 +6,8 @@ const isProd = process.env.NODE_ENV === "production"
 
 module.exports = {
   entry: {
-    "creation-of-the-world": "./src/CreationOfTheWorld.bs.js"
+    "star/creation-of-the-world": "./src/Star_CreationOfTheWorld.bs.js",
+    "index": "./src/Index.bs.js"
   },
   mode: isProd ? "production" : "development",
   devtool: "source-map",
@@ -16,7 +17,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/creation-of-the-world.html",
+      template: "./src/index.html",
+      filename: "index.html",
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/star/creation-of-the-world.html",
+      filename: "star/creation-of-the-world.html",
       inject: false
     })
   ],
