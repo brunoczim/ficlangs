@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Stab Folk Alphabet";
+    src: url("../../Star Folk Alphabet.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cantarell", sans-serif;
+}
+
+.title, .paragraph {
+    display: flex;
+}
+
+.intext-orthography, .boxed-orthography {
+    font-family: "Star Folk Alphabet";
+}
+
+.button, .active-button, .inactive-button {
+    padding: 4pt;
+    border: 1px solid #8888DD;
+    border-radius: 5pt;
+    font-weight: 600;
+    margin: 4pt;
+}
+
+.button:hover,  .active-button:hover, .inactive-button:hover {
+    cursor: pointer;
+}
+
+.button {
+    background-color: #EFFFF8;
+}
+
+.active-button {
+    background-color: #C0F0F6;
+}
+
+.intext-romanization,
+.intext-broad,
+.intext-narrow,
+.intext-translation,
+.intext-attributes,
+.boxed-orthography,
+.boxed-romanization,
+.boxed-broad,
+.boxed-narrow,
+.boxed-translation,
+.boxed-attributes {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+.word {
+    margin: 5pt;
+}
+
+.word-has-boxed {
+    border: 3pt solid #AA55AA;
+    padding: 3pt;
+}
+
+.word-no-boxed {
+    padding: 6pt;
+}
+
+.word-no-boxed:hover {
+    cursor: pointer;
+}
+
+.boxed-word {
+    border-top-style: solid;
+    border-top-width: 2pt;
+    border-top-color: #AA55AA;
+    padding: 4pt;
+}

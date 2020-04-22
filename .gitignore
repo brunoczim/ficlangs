@@ -1,2 +1,7 @@
 .~*
 *.agdai
+*.bs.js
+/books/node_modules
+/books/build
+/books/dist
+/books/lib
