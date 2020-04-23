@@ -65,7 +65,7 @@
     padding: 6pt;
 }
 
-.word-has-boxed:hover, .word-no-boxed:hover {
+.intext-word:hover {
     cursor: pointer;
 }
 

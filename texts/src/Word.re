@@ -8,11 +8,27 @@ type t = {
 };
 
 let make =
-    (~orthography, ~romanization, ~broad, ~narrow, ~translation, ~attributes) => {
+    (
+      ~orthography,
+      ~romanization=?,
+      ~broad,
+      ~narrow=?,
+      ~translation,
+      ~attributes=[],
+      (),
+    ) => {
   orthography,
-  romanization,
+  romanization:
+    switch (romanization) {
+    | Some(roman) => roman
+    | None => orthography
+    },
   broad,
-  narrow,
+  narrow:
+    switch (narrow) {
+    | Some(narrow) => narrow
+    | None => broad
+    },
   translation,
   attributes,
 };

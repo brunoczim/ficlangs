@@ -3,11 +3,12 @@ type t;
 let make:
   (
     ~orthography: string,
-    ~romanization: string,
+    ~romanization: string=?,
     ~broad: string,
-    ~narrow: string,
+    ~narrow: string=?,
     ~translation: string,
-    ~attributes: list((string, string))
+    ~attributes: list((string, string))=?,
+    unit
   ) =>
   t;
 
