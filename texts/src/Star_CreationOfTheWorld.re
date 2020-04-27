@@ -160,6 +160,13 @@ let text = [
         ],
         (),
       ),
+      Word.make(
+        ~orthography={j|:|j},
+        ~romanization={j|.|j},
+        ~broad={j||j},
+        ~literal={j|.|j},
+        (),
+      ),
     ],
   }),
 ];
