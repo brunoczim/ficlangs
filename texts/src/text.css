@@ -13,6 +13,11 @@
     display: flex;
 }
 
+.title-wrapper, .paragraph-wrapper {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
 .intext-orthography, .boxed-orthography {
     font-family: "Star Folk Alphabet";
 }
@@ -40,20 +45,21 @@
 .intext-romanization,
 .intext-broad,
 .intext-narrow,
-.intext-translation,
+.intext-literal,
 .intext-attributes,
 .boxed-orthography,
 .boxed-romanization,
 .boxed-broad,
 .boxed-narrow,
-.boxed-translation,
+.boxed-literal,
 .boxed-attributes {
     font-size: 14pt;
     font-weight: normal;
 }
 
 .word {
-    margin: 5pt;
+    margin-left: 5pt;
+    margin-right: 5pt;
 }
 
 .word-has-boxed {

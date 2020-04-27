@@ -35,7 +35,7 @@ let text = [
       Word.make(
         ~orthography={j|ǵaskes|j},
         ~broad={j|ˈkʷʼas.kʰes|j},
-        ~narrow={j|ˈkʷʼɒs.kʰɤs|j},
+        ~narrow={j|ˈkʷʼɒs.kʰɤ̞s|j},
         ~literal={j|create|j},
         ~attributes=[({j|form|j}, {j|infinitive|j})],
         (),
@@ -76,7 +76,7 @@ let text = [
       Word.make(
         ~orthography={j|ǵaskes|j},
         ~broad={j|ˈkʷʼas.kʰes|j},
-        ~narrow={j|ˈkʷʼɒs.kʰɤs|j},
+        ~narrow={j|ˈkʷʼɒs.kʰɤ̞s|j},
         ~literal={j|create|j},
         ~attributes=[({j|form|j}, {j|infinitive|j})],
         (),
