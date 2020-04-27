@@ -5,8 +5,9 @@ type action =
   | ToggleRomanization
   | ToggleBroad
   | ToggleNarrow
-  | ToggleTranslation
-  | ToggleAttributes;
+  | ToggleLiteral
+  | ToggleAttributes
+  | ToggleTranslation;
 
 [@react.component]
 let make = (~text) => {
@@ -42,10 +43,10 @@ let make = (~text) => {
                 state.settings,
               ),
           }
-        | ToggleTranslation => {
+        | ToggleLiteral => {
             settings:
-              Settings.setShowTranslation(
-                !Settings.showTranslation(state.settings),
+              Settings.setShowLiteral(
+                !Settings.showLiteral(state.settings),
                 state.settings,
               ),
           }
@@ -53,6 +54,13 @@ let make = (~text) => {
             settings:
               Settings.setShowAttributes(
                 !Settings.showAttributes(state.settings),
+                state.settings,
+              ),
+          }
+        | ToggleTranslation => {
+            settings:
+              Settings.setShowTranslation(
+                !Settings.showTranslation(state.settings),
                 state.settings,
               ),
           }
@@ -98,16 +106,22 @@ let make = (~text) => {
         active={Settings.showNarrow(state.settings)}
       />
       <ToggleButton
-        key="translation"
-        contents="Translation"
-        onClick={(_, _) => dispatch(ToggleTranslation)}
-        active={Settings.showTranslation(state.settings)}
+        key="literal"
+        contents="Literal"
+        onClick={(_, _) => dispatch(ToggleLiteral)}
+        active={Settings.showLiteral(state.settings)}
       />
       <ToggleButton
         key="attributes"
         contents="Attributes"
         onClick={(_, _) => dispatch(ToggleAttributes)}
         active={Settings.showAttributes(state.settings)}
+      />
+      <ToggleButton
+        key="translation"
+        contents="Translation"
+        onClick={(_, _) => dispatch(ToggleTranslation)}
+        active={Settings.showTranslation(state.settings)}
       />
     </div>
     <div className="text-wrapper">

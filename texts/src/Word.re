@@ -3,7 +3,7 @@ type t = {
   romanization: string,
   broad: string,
   narrow: string,
-  translation: string,
+  literal: string,
   attributes: list((string, string)),
 };
 
@@ -13,7 +13,7 @@ let make =
       ~romanization=?,
       ~broad,
       ~narrow=?,
-      ~translation,
+      ~literal,
       ~attributes=[],
       (),
     ) => {
@@ -29,7 +29,7 @@ let make =
     | Some(narrow) => narrow
     | None => broad
     },
-  translation,
+  literal,
   attributes,
 };
 
@@ -37,7 +37,7 @@ let orthography = word => word.orthography;
 let romanization = word => word.romanization;
 let broad = word => word.broad;
 let narrow = word => word.narrow;
-let translation = word => word.translation;
+let literal = word => word.literal;
 let attributes = word => word.attributes;
 
 module Boxed = {
@@ -48,7 +48,7 @@ module Boxed = {
       <Romanization.Boxed key="romanization" contents={word.romanization} />
       <Broad.Boxed key="broad" contents={word.broad} />
       <Narrow.Boxed key="narrow" contents={word.narrow} />
-      <Translation.Boxed key="translation" contents={word.translation} />
+      <Literal.Boxed key="literal" contents={word.literal} />
       <Attributes.Boxed key="attributes" pairs={word.attributes} />
       <Button key="close" onClick=onClose contents="Close" />
     </div>;
@@ -128,10 +128,10 @@ module InText = {
           }
         }
         {
-          if (Settings.showTranslation(settings)) {
-            <Translation.InText
-              key="translation"
-              contents={word.translation}
+          if (Settings.showLiteral(settings)) {
+            <Literal.InText
+              key="literal"
+              contents={word.literal}
             />;
           } else {
             React.null;

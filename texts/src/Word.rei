@@ -6,7 +6,7 @@ let make:
     ~romanization: string=?,
     ~broad: string,
     ~narrow: string=?,
-    ~translation: string,
+    ~literal: string,
     ~attributes: list((string, string))=?,
     unit
   ) =>
@@ -16,7 +16,7 @@ let orthography: t => string;
 let romanization: t => string;
 let broad: t => string;
 let narrow: t => string;
-let translation: t => string;
+let literal: t => string;
 let attributes: t => list((string, string));
 
 module Boxed: {
