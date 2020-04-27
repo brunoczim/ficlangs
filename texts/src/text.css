@@ -52,7 +52,9 @@
 .boxed-broad,
 .boxed-narrow,
 .boxed-literal,
-.boxed-attributes {
+.boxed-attributes,
+.translation
+{
     font-size: 14pt;
     font-weight: normal;
 }
