@@ -43,7 +43,14 @@ let text = [
     ],
   }),
   Element.Paragraph({
-    translation: "This book is about the creation of the world.",
+    translation:
+      String.concat(
+        "",
+        [
+          "This book is about the creation of the world.",
+          "The story starts about 3125 years ago.",
+        ],
+      ),
     words: [
       Word.make(
         ~orthography={j|teksi|j},
@@ -165,6 +172,41 @@ let text = [
         ~romanization={j|.|j},
         ~broad={j||j},
         ~literal={j|.|j},
+        (),
+      ),
+      Word.make(
+        ~orthography={j|sísnerbá|j},
+        ~broad={j|ˈsiː.sneɹ.pʼaː|j},
+        ~narrow={j|ˈsɨː.snəɹ.pʼäː|j},
+        ~literal={j|story|j},
+        ~attributes=[
+          ({j|gender|j}, {j|divine|j}),
+          ({j|case|j}, {j|topical|j}),
+          ({j|number|j}, {j|singular|j}),
+        ],
+        (),
+      ),
+      Word.make(
+        ~orthography={j|tńercef|j},
+        ~broad={j|ˈtʰɲeɹ.cʰeɸ|j},
+        ~narrow={j|ˈtʰɲe̞ɹ.cʰe̞ɸ|j},
+        ~literal={j|starts|j},
+        ~attributes=[
+          ({j|person|j}, {j|3rd|j}),
+          ({j|tense|j}, {j|present|j}),
+        ],
+        (),
+      ),
+      Word.make(
+        ~orthography={j|ẋade|j},
+        ~broad={j|ˈxʷa.tʼe|j},
+        ~narrow={j|ˈxʷɒ.tʼə|j},
+        ~literal={j|story|j},
+        ~attributes=[
+          ({j|gender|j}, {j|divine|j}),
+          ({j|case|j}, {j|nominative|j}),
+          ({j|number|j}, {j|singular|j}),
+        ],
         (),
       ),
     ],
