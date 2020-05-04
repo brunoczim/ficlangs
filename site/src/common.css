@@ -34,3 +34,16 @@ a:visited {
     padding: 30pt;
     margin: 0 auto 0 auto;
 }
+
+
+ul, ol {
+    margin: 18pt;
+}
+
+li {
+    margin: 8pt;
+}
+
+h1 {
+    margin-top: 10pt;
+}

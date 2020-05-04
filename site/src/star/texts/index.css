@@ -1,0 +1,7 @@
+@import "../index.css";
+@import "../../texts.css";
+
+.intext-orthography, .boxed-orthography {
+    font-family: "Star Folk Alphabet";
+}
+

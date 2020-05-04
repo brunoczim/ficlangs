@@ -1,4 +1,4 @@
-[%bs.raw {|require("./text.css")|}];
+[%bs.raw {|require("./star/texts/index.css")|}];
 
 let text = [
   Element.Title({

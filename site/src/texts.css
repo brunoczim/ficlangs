@@ -1,10 +1,5 @@
 @import "./common.css";
 
-@font-face {
-    font-family: "Star Folk Alphabet";
-    src: url("../../Star Folk Alphabet.ttf");
-}
-
 .buttons-wrapper {
     margin-top: 10pt;
 }
@@ -16,10 +11,6 @@
 .title-wrapper, .paragraph-wrapper {
     margin-top: 10pt;
     margin-bottom: 10pt;
-}
-
-.intext-orthography, .boxed-orthography {
-    font-family: "Star Folk Alphabet";
 }
 
 .button, .active-button, .inactive-button {

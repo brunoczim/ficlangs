@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n}\n\nbody, html {\n    width: 100%;\n    height: 100%;\n}\n\nbody {\n    font-family: \"Cantarell\", sans-serif;\n    font-size: 12pt;\n    text-align: center;\n}\n\na {\n    color: #00879C;\n    font-weight: bold;\n    text-decoration: none;\n}\n\na:hover {\n    color: #0097A8;\n    text-decoration: underline;\n}\n\na:visited {\n    color: #338899;\n    text-decoration: underline;\n}\n\n#root {\n    padding: 30pt;\n    margin: 0 auto 0 auto;\n}\n", ""]);
+exports.push([module.i, "* {\n    padding: 0;\n    margin: 0;\n}\n\nbody, html {\n    width: 100%;\n    height: 100%;\n}\n\nbody {\n    font-family: \"Cantarell\", sans-serif;\n    font-size: 12pt;\n    text-align: center;\n}\n\na {\n    color: #00879C;\n    font-weight: bold;\n    text-decoration: none;\n}\n\na:hover {\n    color: #0097A8;\n    text-decoration: underline;\n}\n\na:visited {\n    color: #338899;\n    text-decoration: underline;\n}\n\n#root {\n    padding: 30pt;\n    margin: 0 auto 0 auto;\n}\n\n\nul, ol {\n    margin: 18pt;\n}\n\nli {\n    margin: 8pt;\n}\n\nh1 {\n    margin-top: 10pt;\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -117,7 +117,7 @@ var ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_module
 exports = ___CSS_LOADER_API_IMPORT___(false);
 exports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);
 // Module
-exports.push([module.i, "ol.list-of-texts > li {\n    margin: 20pt;\n}\n", ""]);
+exports.push([module.i, "\n\n", ""]);
 // Exports
 module.exports = exports;
 

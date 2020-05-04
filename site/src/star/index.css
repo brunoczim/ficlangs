@@ -1,0 +1,10 @@
+@import "../common.css";
+
+@font-face {
+    font-family: "Star Folk Alphabet";
+    src: url("../../../Star Folk Alphabet.ttf");
+}
+
+.star-folk-alphabet {
+    font-family: "Star Folk Alphabet";
+}

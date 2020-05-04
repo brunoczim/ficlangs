@@ -79,7 +79,7 @@ let make = (~text) => {
     );
 
   <div className="screen-wrapper">
-    <a href="../index.html"> {React.string("Go to Index of Texts")} </a>
+    <a href="./"> {React.string("Go to Index of Texts")} </a>
     <div className="buttons-wrapper">
       <ToggleButton
         key="orthography"

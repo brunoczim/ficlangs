@@ -6,8 +6,12 @@ const isProd = process.env.NODE_ENV === "production"
 
 module.exports = {
   entry: {
-    "star/creation-of-the-world": "./src/Star_CreationOfTheWorld.bs.js",
-    "index": "./src/Index.bs.js"
+    "index": "./src/Index.bs.js",
+    "star/index": "./src/Star_Index.bs.js",
+    "star/phonology": "./src/Star_Phonology.bs.js",
+    "star/texts/index": "./src/Star_Texts_Index.bs.js",
+    "star/texts/creation-of-the-world":
+      "./src/Star_Texts_CreationOfTheWorld.bs.js"
   },
   mode: isProd ? "production" : "development",
   devtool: "source-map",
@@ -22,8 +26,23 @@ module.exports = {
       inject: false
     }),
     new HtmlWebpackPlugin({
-      template: "./src/star/creation-of-the-world.html",
-      filename: "star/creation-of-the-world.html",
+      template: "./src/star/index.html",
+      filename: "star/index.html",
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/star/phonology.html",
+      filename: "star/phonology.html",
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/star/texts/index.html",
+      filename: "star/texts/index.html",
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/star/texts/creation-of-the-world.html",
+      filename: "star/texts/creation-of-the-world.html",
       inject: false
     })
   ],
