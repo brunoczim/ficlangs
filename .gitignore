@@ -1,7 +1,7 @@
 .~*
 *.agdai
 *.bs.js
-/texts/node_modules
-/texts/build
-/texts/dist
-/texts/lib
+/site/node_modules
+/site/build
+/site/dist
+/site/lib

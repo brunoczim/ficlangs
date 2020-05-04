@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    font-family: "Cantarell", sans-serif;
+    font-family: "Liberation Sans", "Arial", "Cantarell", sans-serif;
     font-size: 12pt;
     text-align: center;
 }
@@ -45,5 +45,31 @@ li {
 }
 
 h1 {
+    margin-top: 15pt;
+    margin-bottom: 8pt;
+}
+
+h2 {
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+
+h3 {
     margin-top: 10pt;
+    margin-bottom: 5pt;
+}
+
+h4 {
+    margin-top: 7pt;
+    margin-bottom: 4pt;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10pt;
 }
