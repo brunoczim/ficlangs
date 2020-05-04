@@ -47,7 +47,7 @@ module.exports = {
       inject: false
     }),
     new CopyPlugin([
-      'img',
+      'src/img',
       { from: 'src/img', to: 'img' },
     ]),
   ],
