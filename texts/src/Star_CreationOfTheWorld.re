@@ -35,7 +35,7 @@ let text = [
       Word.make(
         ~orthography={j|ǵaskes|j},
         ~broad={j|ˈkʷʼas.kʰes|j},
-        ~narrow={j|ˈkʷʼɒs.kʰɤ̞s|j},
+        ~narrow={j|ˈqʷʼɒs.kʰɤ̞s|j},
         ~literal={j|create|j},
         ~attributes=[({j|form|j}, {j|infinitive|j})],
         (),
@@ -83,7 +83,7 @@ let text = [
       Word.make(
         ~orthography={j|ǵaskes|j},
         ~broad={j|ˈkʷʼas.kʰes|j},
-        ~narrow={j|ˈkʷʼɒs.kʰɤ̞s|j},
+        ~narrow={j|ˈqʷʼɒs.kʰɤ̞s|j},
         ~literal={j|create|j},
         ~attributes=[({j|form|j}, {j|infinitive|j})],
         (),
@@ -102,7 +102,7 @@ let text = [
       Word.make(
         ~orthography={j|ẋaḿ|j},
         ~broad={j|ˈxʷaŋʷ|j},
-        ~narrow={j|ˈxʷɒŋʷ|j},
+        ~narrow={j|ˈχʷɒŋʷ|j},
         ~literal={j|this|j},
         ~attributes=[
           ({j|gender|j}, {j|inanimate|j}),
@@ -200,12 +200,31 @@ let text = [
       Word.make(
         ~orthography={j|ẋade|j},
         ~broad={j|ˈxʷa.tʼe|j},
-        ~narrow={j|ˈxʷɒ.tʼə|j},
+        ~narrow={j|ˈχʷɒ.tʼə|j},
         ~literal={j|story|j},
         ~attributes=[
           ({j|gender|j}, {j|divine|j}),
           ({j|case|j}, {j|nominative|j}),
           ({j|number|j}, {j|singular|j}),
+        ],
+        (),
+      ),
+      Word.make(
+        ~orthography={j|wéḿké|j},
+        ~broad={j|ˈweːŋʷ.kʰeː|j},
+        ~narrow={j|ˈwo̞ːŋʷ.kʰe̞ː|j},
+        ~literal={j|at|j},
+        ~attributes=[({j|case|j}, {j|accusative|j})],
+        (),
+      ),
+      Word.make(
+        ~orthography={j|newnse|j},
+        ~broad={j|ˈnewn.se|j},
+        ~narrow={j|ˈnəwn.sə|j},
+        ~literal={j|five|j},
+        ~attributes=[
+          ({j|gender|j}, {j|divine|j}),
+          ({j|case|j}, {j|prepositional|j}),
         ],
         (),
       ),
