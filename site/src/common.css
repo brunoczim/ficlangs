@@ -74,3 +74,9 @@ th, td {
     border: 1px solid black;
     padding: 10pt;
 }
+
+img {
+    max-width: 600px;
+    width: 98%;
+    height: auto;
+}
