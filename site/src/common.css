@@ -65,6 +65,11 @@ h4 {
     margin-bottom: 5pt;
 }
 
+.table-wrapper {
+    overflow: auto;
+    max-width: 100%;
+}
+
 table {
     border-collapse: collapse;
     margin: auto;
@@ -72,7 +77,7 @@ table {
 
 th, td {
     border: 1px solid black;
-    padding: 10pt;
+    padding: 7pt;
 }
 
 img {
