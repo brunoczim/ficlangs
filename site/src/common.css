@@ -78,6 +78,6 @@ th, td {
 img {
     max-width: 500pt;
     max-height: 500pt;
-    width: auto;
+    width: 100%;
     height: auto;
 }
