@@ -45,6 +45,10 @@ li {
     margin: 8pt;
 }
 
+table ul, ol, li {
+    margin: 5pt;
+}
+
 h1 {
     margin-top: 50pt;
     margin-bottom: 12pt;
