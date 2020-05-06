@@ -45,8 +45,11 @@ li {
     margin: 8pt;
 }
 
-table ul, ol, li {
-    margin: 5pt;
+table ul, table ol, table li {
+    margin-left: 7pt;
+    margin-right: 7pt;
+    margin-top: 2pt;
+    margin-bottom: 2pt;
 }
 
 h1 {
@@ -71,6 +74,7 @@ h4 {
 
 .table-wrapper {
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     max-width: 100%;
 }
 
