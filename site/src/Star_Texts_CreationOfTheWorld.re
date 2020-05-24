@@ -45,7 +45,7 @@ let text = [
   Element.Paragraph({
     translation:
       String.concat(
-        "",
+        " ",
         [
           "This book is about the creation of the world.",
           "The story starts about 3125 years ago.",
