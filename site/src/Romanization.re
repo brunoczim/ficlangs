@@ -1,9 +1,7 @@
 module InText = {
   [@react.component]
   let make = (~contents) =>
-    <div className="intext-romanization">
-      {String.concat("", ["roman: ", contents]) |> React.string}
-    </div>;
+    <div className="intext-romanization"> {React.string(contents)} </div>;
 };
 
 module Boxed = {

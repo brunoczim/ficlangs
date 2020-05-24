@@ -1,9 +1,7 @@
 module InText = {
   [@react.component]
   let make = (~contents) =>
-    <div className="intext-literal">
-      {String.concat("", ["literal: ", contents]) |> React.string}
-    </div>;
+    <div className="intext-literal"> {React.string(contents)} </div>;
 };
 
 module Boxed = {

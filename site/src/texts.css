@@ -6,6 +6,8 @@
 
 .title, .paragraph {
     display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
 }
 
 .title-wrapper, .paragraph-wrapper {
